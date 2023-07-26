@@ -65,6 +65,9 @@
             <li><a>Case </a></li>
             <li><a>Blog </a></li>
             <li><a>Contact Us</a></li>
+            <li>
+               <input type="text" placeholder="Search" class="outline-none text-black md:bg-transparent ">
+            </li>
             </ul>
           </div>
         </div>
@@ -110,6 +113,7 @@
             <li><a>Case </a></li>
             <li><a>Blog </a></li>
             <li><a>Contact Us</a></li>
+            <li><input type="text" placeholder="Search" class="outline-none text-black bg-base-200 input input-bordered "></li>
             </ul>
           </div>
         </div>
@@ -128,13 +132,14 @@
       </nav>
       <!-- banner section -->
       <section class="my-12 ">
-        <div class="carousel w-full h-[500px] rounded-lg relative -z-10">
+        <div class="carousel w-full h-[500px] rounded-lg relative">
+          <!-- slide one -->
           <div id="slide1" class="carousel-item relative w-full ">
             <div
               class="hero w-full"
               style="background-image: url('images/banner1.png')"
             >
-              <div class="hero-overlay bg-black bg-opacity-60"></div>
+              <div class="hero-overlay bg-gray-900 bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md space-y-5">
                     <h3 class="text-5xl font-bold">Exotic tastes at your doorstep</h3>
@@ -147,16 +152,21 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
+            <div class="w-[50px] h-[50px] rounded-full bg-black flex justify-center items-center">
               <a href="#slide4" class="text-white">❮</a>
+            </div>
+            <div class="w-[50px] h-[50px] rounded-full bg-black flex justify-center items-center">
               <a href="#slide2" class="text-white">❯</a>
             </div>
+            </div>
           </div>
+          <!-- slide two -->
           <div id="slide2" class="carousel-item relative w-full ">
             <div
               class="hero w-full"
               style="background-image: url('images/banner2.png')"
             >
-              <div class="hero-overlay bg-black bg-opacity-60"></div>
+              <div class="hero-overlay bg-gray-900 bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md space-y-5">
                     <h3 class="text-5xl font-bold">Exotic tastes at your doorstep</h3>
@@ -169,16 +179,21 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
+            <div class="w-[50px] h-[50px] rounded-full bg-black flex justify-center items-center">
               <a href="#slide1" class="text-white">❮</a>
+            </div>
+            <div class="w-[50px] h-[50px] rounded-full bg-black flex justify-center items-center">
               <a href="#slide3" class="text-white">❯</a>
+            </div>  
             </div>
           </div>
+          <!-- slide three -->
           <div id="slide3" class="carousel-item relative w-full ">
             <div
               class="hero w-full"
               style="background-image: url('images/banner3.png')"
             >
-              <div class="hero-overlay bg-black bg-opacity-60"></div>
+              <div class="hero-overlay bg-gray-900 bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md space-y-5">
                     <h3 class="text-5xl font-bold">
@@ -192,16 +207,21 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
+            <div class="w-[50px] h-[50px] rounded-full bg-black flex justify-center items-center">
               <a href="#slide2" class="text-white">❮</a>
+            </div>
+            <div class="w-[50px] h-[50px] rounded-full bg-black flex justify-center items-center">
               <a href="#slide4" class="text-white">❯</a>
             </div>
+            </div>
           </div>
+          <!-- slide four -->
           <div id="slide4" class="carousel-item relative w-full ">
             <div
               class="hero w-full"
               style="background-image: url('images/banner4.png')"
             >
-              <div class="hero-overlay bg-black bg-opacity-60"></div>
+              <div class="hero-overlay bg-gray-900 bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md space-y-5">
                   <div class="flex justify-center">
@@ -217,8 +237,12 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
+            <div class="w-[50px] h-[50px] rounded-full bg-black flex justify-center items-center">
               <a href="#slide3" class="text-white">❮</a>
+            </div>
+            <div class="w-[50px] h-[50px] rounded-full bg-black flex justify-center items-center">
               <a href="#slide1" class="text-white">❯</a>
+            </div>
             </div>
           </div>
         </div>
@@ -306,6 +330,7 @@
             </div>
             <!-- card secton -->
             <div id="card" class="grid grid-cols-1 lg:grid-cols-4 md:grid-flow-row md:grid-cols-2 gap-3 mt-10">
+              <!-- card one -->
                 <div class="p-5 border border-gray-200 ">
                   <div class="flex justify-center">
                     <img src="./images/fruit6.png" alt="" />
@@ -316,9 +341,9 @@
                   <div class="rating rating-sm flex justify-center mb-2">
                     <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" />
                     <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" checked />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-300" />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-300" />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-200" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" />
                   </div>
                   <!-- The button to open modal -->
                   <p class="text-center"><a href="#my_modal_1" class="text-[#F85559] mt-3">Details</a></p>
@@ -381,6 +406,7 @@
                 </div>
                 <!-- modals -->
                 </div>
+                <!-- card two -->
                 <div class="p-5  border border-gray-200 ">
                   <div class="flex justify-center">
                     <img src="./images/fruit7.png" alt="" />
@@ -390,13 +416,14 @@
                   <p class="text-center my-3">Orange</p>
                   <div class="rating rating-sm flex justify-center mb-2">
                     <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-300" checked />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-200" />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-200" />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-200" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" checked />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-red-400" />
                   </div>
                   <p class="text-center"><a href="#my_modal_2" class="text-[#F85559] mt-3">Details</a></p>
                 </div>
+                <!-- card three -->
                 <div class="p-5 border border-gray-200  ">
                   <div class="flex justify-center">
                     <img src="./images/fruit8.png" alt="" />
@@ -413,6 +440,7 @@
                   </div>
                   <p class="text-center"><a href="#my_modal_3" class="text-[#F85559] mt-3">Details</a></p>
                 </div>
+                <!-- card four -->
                 <div class="p-5 border border-gray-200 ">
                   <div class="flex justify-center">
                     <img src="./images/fruit9.png" alt="" />
